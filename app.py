@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-server_locs= st.secrets["SERVER_URL"]
+server_loc = st.secrets["SERVER_URL"]
 
 with st.form("details"):
     st.title("AI INTERVIEW QUESTIONS CHAT BOT ")
@@ -42,7 +42,7 @@ with st.form("details"):
         """
 
         response = requests.post(
-            f"{server_locs}/questions",
+            f"{server_loc}/questions",
             json={"prompt": prompt}
         )
 
