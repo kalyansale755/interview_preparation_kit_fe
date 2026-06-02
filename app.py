@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-##server_loc = st.secrets["SERVER_URL"]
+server_loc = st.secrets["SERVER_URL"]
 
 with st.form("details"):
     st.title("AI INTERVIEW QUESTIONS CHAT BOT ")
